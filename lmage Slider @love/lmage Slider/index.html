@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="slider-container">
+    <div class="slider-images">
+      <div class="slider-img">
+        <img src="Images/IMG-20250209-WA0148.jpg" alt="1" />
+        <h1>I</h1>
+        <div class="details">
+          <h2>I</h2>
+          <p>You're the API to my heart</p>
+        </div>
+      </div>
+      <div class="slider-img">
+        <img src="Images/IMG-20250209-WA0150.jpg" alt="2" />
+        <h1>Love</h1>
+        <div class="details">
+          <h2></h2>
+          <p>Every day with you feels like a dream I never want to wake up from.</p>
+        </div>
+      </div>
+      <div class="slider-img">
+        <img src="Images/IMG-20250209-WA0151.jpg" alt="3" />
+        <h1>you</h1>
+        <div class="details">
+          <h2></h2>
+          <p>You are my heart’s greatest treasure, my safe place, and my forever love</p>
+        </div>
+      </div>
+      <div class="slider-img active">
+        <img src="Images/IMG-20250209-WA0152.jpg" alt="4" />
+        <h1>puja</h1>
+        <div class="details">
+          <h2></h2>
+          <p>Your love makes my world brighter, my heart lighter, and my soul complete</p>
+        </div>
+      </div>
+      <div class="slider-img">
+        <img src="Images/IMG-20250209-WA0153.jpg" alt="5" />
+        <h1>💖</h1>
+        <div class="details">
+          <h2></h2>
+          <p>With you, every moment is special, and every memory is a gift</p>
+        </div>
+      </div>
+      <div class="slider-img">
+        <img src="Images/IMG-20250209-WA0154.jpg" alt="6" />
+        <h1>😘</h1>
+        <div class="details">
+          <h2></h2>
+          <p>You're css to my html</p>
+        </div>
+      </div>
+      <div class="slider-img">
+        <img src="Images/IMG-20250209-WA0155.jpg" alt="7" />
+        <h1>😍</h1>
+        <div class="details">
+          <h2></h2>
+          <p>You're pinned in my mind</p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+  <script src="js/jQuery.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $(".slider-img").on("click", function () {
+        $(".slider-img").removeClass("active");
+        $(this).addClass("active");
+      });
+    });
+  </script>
+</body>
+
+</html>
